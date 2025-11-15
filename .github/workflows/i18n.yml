@@ -38,6 +38,7 @@ jobs:
           commit_user_name: "Anuvaad Bot"
           commit_user_email: "bot@anuvaad.dev"
           create_branch: true
+          push_options: "--force"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

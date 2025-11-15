@@ -45,6 +45,7 @@ jobs:
         uses: peter-evans/create-pull-request@v6
         with:
           branch: auto/i18n-updates
+          base: main
           title: "Automated Translation Updates"
           body: "This PR includes automatically generated translations."
           labels: auto-translation

@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 export async function getTranslations(locale: string) {
   try {
-    const file = await import(`../../locales/${locale}.json`);
+    const file = await import(`../locales/${locale}.json`);
     return file.default;
   } catch (error) {
     console.warn(`Locale file missing: ${locale}. Falling back to en.`);

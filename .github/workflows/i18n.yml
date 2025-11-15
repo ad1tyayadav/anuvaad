@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Setup Node
@@ -21,7 +21,7 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install Dependencies
+      - name: Install dependencies
         run: npm install
 
       - name: Setup Lingo API Key
@@ -30,7 +30,7 @@ jobs:
       - name: Run Lingo CLI
         run: npx lingo.dev@latest run
 
-      - name: Commit Changes
+      - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update translations"
@@ -38,11 +38,15 @@ jobs:
           commit_user_name: "Anuvaad Bot"
           commit_user_email: "bot@anuvaad.dev"
           create_branch: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
           branch: auto/i18n-updates
           title: "Automated Translation Updates"
-          body: "This PR contains automatically generated translations."
+          body: "This PR includes automatically generated translations."
           labels: auto-translation
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

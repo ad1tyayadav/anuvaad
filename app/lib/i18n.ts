@@ -5,7 +5,7 @@ export async function getTranslations(locale: string) {
     return file.default;
   } catch (error) {
     console.warn(`Locale file missing: ${locale}. Falling back to en.`);
-    const file = await import(`../../locales/en.json`);
+    const file = await import(`../locales/en.json`);
     return file.default;
   }
 }

@@ -1,0 +1,48 @@
+name: Auto Translate
+
+on:
+  push:
+    paths:
+      - "app/locales/en.json"
+      - "app/docs/en.md"
+      - "i18n.json"
+  workflow_dispatch:
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Setup Lingo API Key
+        run: echo "LINGODOTDEV_API_KEY=${{ secrets.LINGODOTDEV_API_KEY }}" >> $GITHUB_ENV
+
+      - name: Run Lingo CLI
+        run: npx lingo.dev@latest run
+
+      - name: Commit Changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update translations"
+          branch: auto/i18n-updates
+          commit_user_name: "Anuvaad Bot"
+          commit_user_email: "bot@anuvaad.dev"
+          create_branch: true
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: auto/i18n-updates
+          title: "Automated Translation Updates"
+          body: "This PR contains automatically generated translations."
+          labels: auto-translation

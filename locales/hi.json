@@ -1,0 +1,14 @@
+{
+  "home.title": "अनुवाद",
+  "home.subtitle": "आपका बहुभाषी ऐप यहां से शुरू होता है।",
+  "docs.title": "दस्तावेज़ीकरण",
+  "docs.subtitle": "अनुवाद के बारे में सब कुछ जानें।",
+  "translator.title": "अनुवादक डैशबोर्ड",
+  "translator.subtitle": "अनुवादों की समीक्षा और सुधार करें।",
+  "navbar.home": "होम",
+  "navbar.docs": "डॉक्स",
+  "navbar.translator": "अनुवादक",
+  "chat.title": "एआई अनुवादक चैट",
+  "chat.placeholder": "संदेश लिखें...",
+  "chat.send": "भेजें"
+}

@@ -1,0 +1,18 @@
+{
+  "home.title": "Anuvaad",
+  "home.subtitle": "Your multilingual app starts here.",
+  
+  "docs.title": "Documentation",
+  "docs.subtitle": "Learn everything about Anuvaad.",
+  
+  "translator.title": "Translator Dashboard",
+  "translator.subtitle": "Review and correct translations.",
+  
+  "navbar.home": "Home",
+  "navbar.docs": "Docs",
+  "navbar.translator": "Translator",
+  
+  "chat.title": "AI Translator Chat",
+  "chat.placeholder": "Type a message...",
+  "chat.send": "Send"
+}

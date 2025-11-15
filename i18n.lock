@@ -1,0 +1,22 @@
+version: 1
+checksums:
+  cd45f366fd2727f232266877d34abf6c:
+    home.title: 74f5bbd0876138d15f2907460b77ed1b
+    home.subtitle: 8f88d0f96132896fab9c2030dd9679ae
+    docs.title: 1563fcb5ddb5037b0709ccd3dd384a92
+    docs.subtitle: 39a480f188aff75aa3c381164be0457f
+    translator.title: 8800834f16c9d2ac6694c06e11a0cd02
+    translator.subtitle: 9756da145a21c5c8c19b9f0e6b1d0ec2
+    navbar.home: 104a3db3b671c04e167eafbe21e57881
+    navbar.docs: 55fea190a0c0fb32acd3dc986cd3cc91
+    navbar.translator: 496eb200e882cc63e03ecb2f5a4f0400
+    chat.title: eefffd4861b6c5f1cc692765d3e0cff6
+    chat.placeholder: 163c631eee2cf50fbcfe1adcd4847ed3
+    chat.send: 76a8497d7b546628b03bb81d5c1ce995
+  e40ce6fbcc5839372232241051e7e602:
+    md-section-0: ea6f226e4bda33d8927d798afa6a278b
+    md-section-1: 75d9d87b42b28da8632b70132011df16
+    md-section-2: 90d70cbdec064800b09728d871e1110e
+    md-section-3: ee11cb0a2414abd9c3503c122204ce1f
+    md-section-4: a679ec224bfc8b02480314c1207fd598
+    md-section-5: dabe32bb0b8d5e29d50c8468c82e3fc2

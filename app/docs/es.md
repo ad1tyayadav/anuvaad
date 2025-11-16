@@ -12,3 +12,7 @@ Anuvaad es una aplicación de demostración que muestra cómo hacer que cualquie
 La localización suele ser dolorosa y manual. Anuvaad automatiza todo el flujo de trabajo utilizando IA.
 
 La localización suele ser dolorosa y manual. Anuvaad automatiza todo el flujo de trabajo utilizando IA.
+
+La localización suele ser dolorosa y manual. Anuvaad automatiza todo el flujo de trabajo utilizando IA.
+
+La localización suele ser dolorosa y manual. Anuvaad automatiza todo el flujo de trabajo utilizando IA.

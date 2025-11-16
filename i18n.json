@@ -3,14 +3,20 @@
   "version": "1.10",
   "locale": {
     "source": "en",
-    "targets": ["hi", "es"]
+    "targets": [
+      "ru"
+    ]
   },
   "buckets": {
     "json": {
-      "include": ["locales/[locale].json"]
+      "include": [
+        "app/locales/[locale].json"
+      ]
     },
     "markdown": {
-      "include": ["app/docs/[locale].md"]
+      "include": [
+        "app/docs/[locale].md"
+      ]
     }
   }
 }
